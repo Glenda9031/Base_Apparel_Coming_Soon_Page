@@ -242,5 +242,225 @@
         cursor: pointer;
     }
 
-    
+    #main #error-message {
+        color: hsl(0, 93%, 68%);
+        text-align: left;
+        padding-left: 25px;
+        margin-top: 5px;
+        font-size: small;
+    }
+
+    #main > div {
+        height: 14px;
+        width: 360px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #portrait-image {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        background-color: hsl(330, 50%, 99%);
+    }
+
+    footer > p {
+        font-size: small;
+        text-align: center;
+        color: hsl(0, 6%, 24%);
+    }
+
+    a {
+        text-decoration: none;
+        color: hsl(0, 93%, 68%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: hsl(0, 93%, 68%);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0;
+    }
+
+    html {
+        display: grid;
+        align-items: center;
+        height: 100%;
+    }
+
+    body {
+        width: 960px;
+        margin: auto;
+    }
+
+    main {
+        display: grid;
+        background-color: hsl(330, 50%, 99%);
+    }
+
+    header {
+        width: 540px;
+    }
+
+    header img {
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+
+    picture {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    picture img {
+        width: 400px;
+        display: block;
+    }
+
+    #main {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 60px;
+    }
+
+    h1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 240px;
+        margin-top: 30px;
+        font-size: 42px;
+        color: hsl(0, 6%, 24%);
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: 10px;
+        color: hsl(0, 6%, 24%);
+    }
+
+    span {
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+    }
+
+    #text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        width: 430px;
+        color: hsl(0, 36%, 70%);
+        line-height: 1.2;
+    }
+
+    form {
+        width: 450px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        align-items: center;
+        grid-template-columns: 70% 10% 20%;
+    }
+
+    input[type=email] {
+        height: 50px;
+        width: 120px;
+        border: 1px solid hsl(0, 30%, 70%);
+        border-right: none;
+        border-radius: 50px 0px 0px 50px;
+        padding-left: 25px;
+    }
+
+    input[type=email]:focus {
+        border: 2px solid hsl(0, 36%, 70%);
+    }
+
+    form div {
+        display: grid;
+        justify-content: center;
+    }
+
+    form img {
+        display: none;
+    }
+
+    input[type=image] {
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        padding: 17px 406px;
+        border-radius: 50px;
+        box-shadow: -2.5px 2.5px 10px 0px hsl(0, 6%, 50%);
+    }
+
+    input[type=image]:hover {
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 93%, 68%));
+        cursor: pointer;
+    }
+
+    #main #error-message {
+        color: hsl(0, 93%, 68%);
+        text-align: left;
+        padding-left: 25px;
+        margin-top: 5px;
+        font-size: small;
+    }
+
+    #main > div {
+        height: 14px;
+        width: 450px;
+    }
+
+    picture {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 5px;   
+    }
+
+    #portrait-image {
+        display: block;
+        margin: auto;
+        width: 420px;
+    } 
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 5px;
+    }
+
+    footer > p {
+        font-size: small;
+        text-align: center;
+        color: hsl(0, 6%, 24%);
+    }
+
+    a {
+        text-decoration: none;
+        color: hsl(0, 93%, 68%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: hsl(0, 93%, 68%);
+    }
 }
